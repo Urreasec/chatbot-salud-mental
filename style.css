@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+/* Personalización de la barra lateral */
+.css-1d391kg {
+    background-color: #f0f5ff;
+}
+
+/* Títulos */
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+h2 {
+    color: #3498db;
+    font-weight: 600;
+}
+
+h3 {
+    color: #2980b9;
+    font-weight: 500;
+}
+
+/* Botones */
+.stButton > button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sliders */
+.stSlider > div {
+    color: #3498db;
+}
+
+/* Mensajes de chat */
+.stChatMessage {
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.stChatMessage.user {
+    background-color: #e8f4fd;
+}
+
+.stChatMessage.assistant {
+    background-color: #f0f5ff;
+}
+
+/* Tarjetas para ejercicios de mindfulness */
+.mindfulness-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.mindfulness-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Animaciones para ejercicios de respiración */
+@keyframes breathe-in {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+@keyframes breathe-out {
+    from { transform: scale(1.2); }
+    to { transform: scale(1); }
+}
+
+.breathe-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.breathe-in {
+    animation: breathe-in 4s forwards;
+}
+
+.breathe-out {
+    animation: breathe-out 4s forwards;
+}
+
+.breathe-hold {
+    animation: none;
+}
+
+/* Personalización de gráficos */
+.stPlotlyChart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Métricas */
+.stMetric {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Spinner personalizado */
+.stSpinner > div {
+    border-color: #3498db transparent transparent transparent;
+}
+
+/* Personalización de selectbox */
+.stSelectbox > div > div {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Personalización de checkbox */
+.stCheckbox > div {
+    color: #3498db;
+}
+
+/* Personalización de dataframe */
+.stDataFrame {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Personalización de audio player */
+.stAudio > div {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Personalización de imágenes */
+.stImage > img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Personalización de la barra de progreso */
+.stProgress > div > div {
+    background-color: #3498db;
+} 
